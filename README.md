@@ -1,4 +1,4 @@
-# TITLE OF PROJECT
+# FORECASTING POPULATION GROWTH AND ECONOMIC IMPACTS: A Comprehensive Analysis of the Best States 2024
 
 # UNC Charlotte Data Analytics Bootcamp Final Project
 
@@ -20,9 +20,9 @@ While members are assigned specific roles, we all worked together on each part o
 
 ## Selected Topic - Place Holder
 
-Overview:
+Overview: This project strives to forecast population growth and analyze its economic implications in various U.S. states. Using data sets related to population growth, cost of living, new businesses, and wages, we have developed a machine-learning model and interface to rank the Best States for 2024. Further, we have employed visualization techniques, such as Tableau dashboards, correlation matrices, and linear regression charts, to present our conclusions effectively.
 
-Objective:
+Objective: The direct objective of this project is to deliver insights into the connection between population growth and economic factors in different states. By forecasting population growth and evaluating its impact on economic indicators like cost of living, new business opportunities, and wages, we aim to identify the Best States for 2024. The project's secondary objective is to showcase the results through visualizations, including a Tableau dashboard, correlation matrix, and linear regression charts, to enhance understanding and foster data-driven decision-making.
 
 ## Questions We Would Like to Answer:
 
