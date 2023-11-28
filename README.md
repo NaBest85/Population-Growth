@@ -42,17 +42,14 @@ Etc.
 Our presentation is hosted on Google Slides, and can be found here. (Embed link in here)
 
 ###### Technologies & Tools Used:
-Design a picture with the logos
-Technologies: Tableau, PostgreSQL
-Languages: Python, HTML, CSS
-Tools: Jupyter Notebook
-Algorithms: Linear Regression, Correlation Matrix, Forecasting, Statistical, Geographic
+
+![TOOLS EMPLOYED FOR DATA ANALYSIS](https://github.com/NaBest85/Population-Growth/assets/135518113/c2160f54-489f-4bfe-a10d-b6522d2a7181)
 
 
 ###### Data Exploration Phase:
-Inset a pic
-ETA
-Extract, Transform, Load
+
+![ETL for DATA EXPLORATION](https://github.com/NaBest85/Population-Growth/assets/135518113/32753b98-9fc0-4c6e-98a4-7f15be3b773e)
+
 
 ###### Data Analysis Phase:
 Detailed descriptions of our data analysis can be found in our [presentation] (add link).
