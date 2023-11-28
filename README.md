@@ -79,7 +79,7 @@ List Sources with Links
 
 In the first week, we were able to complete the initial unsupervised clustering. We attained the following 3D Pricincipal Cluster Analysis Plot from this data.
 
-![Initial 3D PCA](Images/ML_initial.png)
+Photo of testing model
 
 ###### Preliminary Feature Engineering, Feature Selection, & Decision-making Process:
 
