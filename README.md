@@ -11,11 +11,6 @@
 
 ![Roles _ Responsibilities-3](https://github.com/NaBest85/Population-Growth/assets/135518113/1e5cda4c-d3c2-40e1-9464-a2fdbd477b53)
 
-<img width="870" alt="Screenshot 2023-11-28 at 12 32 00 AM" src="https://github.com/NaBest85/Population-Growth/assets/135518113/1b5a576d-c131-41f1-906f-cddf36d902b5">
-
-
-
-
 While members are assigned specific roles, we all worked together on each part of the project. 
 
 ---
@@ -35,10 +30,7 @@ Etc.
 
 #### Locations of Project Deliverables:
 
-<img width="597" alt="Screenshot 2023-11-28 at 12 32 57 AM" src="https://github.com/NaBest85/Population-Growth/assets/135518113/b00f6b4a-bb1d-477e-bb05-87eccfdad2e2">
-
-
-
+![Objectives](https://github.com/NaBest85/Population-Growth/assets/135518113/e677a23b-2aa1-4396-8226-b0890041cf62)
 
 #### Presentation:
 Our presentation is hosted on Google Slides, and can be found here. (Embed link in here)
