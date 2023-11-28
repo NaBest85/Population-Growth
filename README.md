@@ -6,8 +6,10 @@
 
 ## This is the GitHub repository for our Boot Camp group's final project. 
 
-### Group Members: (embed links to everyone’s repository with their names)
+### Group Members:
 
+
+![Roles _ Responsibilities-3](https://github.com/NaBest85/Population-Growth/assets/135518113/1e5cda4c-d3c2-40e1-9464-a2fdbd477b53)
 
 <img width="870" alt="Screenshot 2023-11-28 at 12 32 00 AM" src="https://github.com/NaBest85/Population-Growth/assets/135518113/1b5a576d-c131-41f1-906f-cddf36d902b5">
 
