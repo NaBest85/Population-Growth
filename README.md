@@ -37,8 +37,7 @@ Our presentation is hosted on Google Slides, and can be found here. (Embed link 
 
 ###### Technologies & Tools Used:
 
-![TOOLS EMPLOYED FOR DATA ANALYSIS](https://github.com/NaBest85/Population-Growth/assets/135518113/c2160f54-489f-4bfe-a10d-b6522d2a7181)
-
+![TOOLS EMPLOYED FOR DATA ANALYSIS-2](https://github.com/NaBest85/Population-Growth/assets/135518113/2b47cdc7-b425-48dc-ac94-d6c042cf42f2)
 
 ###### Data Exploration Phase:
 
