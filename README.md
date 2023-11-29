@@ -53,7 +53,7 @@ Detailed descriptions of our data analysis can be found in our [presentation](ad
 
 Here is a chart the shows x, y, z.
 
-<img width="648" alt="SCIKIT_LEARN LINEAR REGRESSION CHART" src="https://github.com/NaBest85/Population-Growth/assets/135518113/8b6b6b57-1001-472a-8a40-eb903561f282">
+<img width="574" alt="SCIKIT_LEARN POPULATION CHANGE LINEAR REGRESSION" src="https://github.com/NaBest85/Population-Growth/assets/135518113/f1407c38-ce92-4831-a54b-aa8c6d784130">
 
 - Fact 1
 
