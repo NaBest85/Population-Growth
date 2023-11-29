@@ -14,7 +14,7 @@ While members are assigned specific roles, we all worked together on each part o
 
 ---
 
-## Selected Topic - Place Holder
+## Selected Topic - Population and Economic Growth
 
 Overview: This project strives to forecast population growth and analyze its economic implications in various U.S. states. Using data sets related to population growth, cost of living, new businesses, and wages, we have developed a machine-learning model and interface to rank the Best States for 2024. Further, we have employed visualization techniques, such as Tableau dashboards, correlation matrices, and linear regression charts, to present our conclusions effectively.
 
@@ -32,7 +32,7 @@ Etc.
 ![Objectives](https://github.com/NaBest85/Population-Growth/assets/135518113/e677a23b-2aa1-4396-8226-b0890041cf62)
 
 #### Presentation:
-Our presentation is hosted on Google Slides, and can be found here. (Embed link in here)
+Our presentation is hosted on Google Slides, and can be found [here](https://tinyurl.com/Group4FinalProjectSlides).
 
 ###### Technologies & Tools Used:
 
