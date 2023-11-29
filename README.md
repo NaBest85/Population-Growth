@@ -49,7 +49,7 @@ Our machine learning interface is hosted on Python Anywhere, and the model can b
 
 
 ###### Data Analysis Phase:
-Detailed descriptions of our data analysis can be found in our [presentation] (add link).
+Detailed descriptions of our data analysis can be found in our [presentation](add link).
 
 Insert charts and brief analysis of said charts
 
