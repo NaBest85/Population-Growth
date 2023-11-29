@@ -51,8 +51,15 @@ Our machine learning interface is hosted on Python Anywhere, and the model can b
 ###### Data Analysis Phase:
 Detailed descriptions of our data analysis can be found in our [presentation](add link).
 
-Insert charts and brief analysis of said charts
+Here is a chart the shows x, y, z.
 
+<img width="648" alt="SCIKIT_LEARN LINEAR REGRESSION CHART" src="https://github.com/NaBest85/Population-Growth/assets/135518113/8b6b6b57-1001-472a-8a40-eb903561f282">
+
+- Fact 1
+
+- Fact 2
+
+- Fact 3
 
 ###### Data Sources:
 
