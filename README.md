@@ -8,8 +8,7 @@
 
 ### Group Members:
 
-
-![Roles _ Responsibilities-3](https://github.com/NaBest85/Population-Growth/assets/135518113/1e5cda4c-d3c2-40e1-9464-a2fdbd477b53)
+![Roles _ Responsibilities-2](https://github.com/NaBest85/Population-Growth/assets/135518113/91d8e7c3-def5-4ead-a017-594c7f088850)
 
 While members are assigned specific roles, we all worked together on each part of the project. 
 
