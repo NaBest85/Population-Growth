@@ -1,0 +1,45 @@
+<div class="container my-10">
+    {% comment %} border-radius: 280px 280px; {% endcomment %}
+    <style>
+      .search {border-radius:20px 20px: 10px solid dark; width: 500px; padding:10; margin:50px;background-colour:dark;height:35px;}
+      .search input { border-radius: 280px 280px;width: 500px; display: inline-block; height:50px;background-colour:#000080;}
+      .search img {border-radius: 280px 280px;float: right; width: 30px ;height:30; position: fixed;background: center;top:115px;left:590px;}
+      .search button{float: right; width: 80px ;height:30; position: fixed;top:170px;left:340px;}
+      body {background-image: url("/static/img/back2.gif"), url("/static/img/back2.gif");
+      background-color: #cccccc;
+      }
+    </style>
+    <form id="search" method="get" action="/search">
+      <div class="search">
+        <input type="text" name="quary" id="transcript" placeholder="search" />
+        <img onclick="startDictation()" src="https://www.animatedimages.org/data/media/387/animated-microphone-image-0018.gif" />
+        <button class="btn btn-success" type="search">Search</button>
+      </div>
+    
+    </form>
+    <script>
+      function startDictation() {
+    
+        if (window.hasOwnProperty('webkitSpeechRecognition')) {
+    
+          var recognition = new webkitSpeechRecognition();
+    
+          recognition.continuous = true;
+          recognition.interimResults = false;
+    
+          recognition.lang = "en-IN";
+          recognition.start();
+          recognition.onresult = function(e) {
+            document.getElementById('transcript').value
+                                     = e.results[0][0].transcript;
+            recognition.stop();
+            document.getElementById('search').submit();
+          };
+    
+          recognition.onerror = function(e) {
+            recognition.stop();
+          }
+    
+        }
+      }
+    </script>

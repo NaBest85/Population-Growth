@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+
+{% block title %} Search Results {% endblock title %}
+{% block body %}
+<style>
+body {
+  {% comment %} background-image: url("/static/img/raj.jpg"), url("/static/img/raj.jpg"); {% endcomment %}
+  background-color: #363945;
+  }
+   .button {
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    position: absolute;
+    top: 200px;
+    cursor: pointer;
+       }
+    .red-text {
+    color: red;
+  }
+  </style>
+<div class="container my-10">
+      {%for  Fileadmin in allFileadmins%}
+  <h2 class="red-text" color=red;>  {{Fileadmin.title }}</h2>
+  <a href="{{adminupload.url}}" download="{{Fileadmin.adminupload.url}}">Download</a>
+          {% endfor %}
+        
+</div>
+
+ {% endblock %}

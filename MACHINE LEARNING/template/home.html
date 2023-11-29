@@ -1,0 +1,418 @@
+{% extends 'base.html' %}
+{% block title %}Home{% endblock title %}
+{% block body %}
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+<canvas id="myChart" style="width:100%;max-width:600px; margin-top: 600px; margin-left:100px;"></canvas>
+<!-- <canvas id="myChart1" style="width:100%;max-width:600px;margin-left:700px; "></canvas> -->
+<!-- Add this line -->
+<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+<script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+
+<style>
+  .funnel-chart {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+
+  }
+
+  select {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  .funnel-chart-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+  }
+
+  #background-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    object-fit: cover;
+  }
+
+  h1,
+  h2 {
+    text-align: center;
+    color: #ffffff;
+  }
+
+  .button-container {
+    text-align: center;
+    margin-top: -720px;
+    margin-left: 30px;
+  }
+
+  canvas {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+
+  .options-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
+
+  .option {
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+  }
+
+  .option input {
+    margin-right: 5px;
+  }
+
+  #submitBtn {
+    margin-top: 10px;
+  }
+</style>
+
+<video id="background-video" autoplay muted loop>
+  <source src="\static\img\Circuit - 27725.mp4" type="video/mp4">
+  <!-- Add alternative video formats if needed -->
+</video>
+
+<div class="button-container" style=" margin-top: -720px;  margin-left: 30px;">
+  <h1 style="margin-bottom: 40px;margin-top: 10;"> 18 Factor Metric Selection </h1>
+  <form id="myForm">
+    {% csrf_token %}
+    <div class="options-container">
+      <div class="option"><label><input type="checkbox" value="Unemployment Rate"> Unemployment Rate Men: 7%</label>
+      </div>
+      <div class="option"><label><input type="checkbox" value="Unemployment Rate Women"> Unemployment Rate Women:
+          7%</label></div>
+      <div class="option"><label><input type="checkbox" value="Combined Household Income"> Combined Household Income:
+          13%</label></div>
+      <div class="option"><label><input type="checkbox" value="Employment Average Salary"> Employment Average Salary:
+          12%</label></div>
+      <div class="option"><label><input type="checkbox" value="One-Year Home Appreciatio"> One-Year Home Appreciation:
+          6%</label></div>
+      <div class="option"><label><input type="checkbox" value="State GDP"> State GDP: 19%</label></div>
+      <div class="option"><label><input type="checkbox" value="Poverty Rate"> Poverty Rate</label></div>
+      <div class="option"><label><input type="checkbox" value="Small Business with Less Than 5 Employee"> Small Business
+          with Less Than 5 Employees: 7%</label></div>
+      <div class="option"><label><input type="checkbox" value="Violent Crime Rate"> Violent Crime Rate: 2%</label></div>
+      <div class="option"><label><input type="checkbox" value="Population 0-19"> Population 0-19: 2%</label></div>
+      <div class="option"><label><input type="checkbox" value="Population 20-34"> Population 20-34: 8%</label></div>
+      <div class="option"><label><input type="checkbox" value="Population 35-49"> Population 35-49: 10%</label></div>
+      <div class="option"><label><input type="checkbox" value="Population 50-69"> Population 50-69: 10%</label></div>
+      <div class="option"><label><input type="checkbox" value="Population 70 and Over"> Population 70 and Over:
+          2%</label>
+      </div>
+      <div class="option"><label><input type="checkbox" value="Total State Population (Male)"> Total State Population
+          (Male): 3%</label></div>
+      <div class="option"><label><input type="checkbox" value="Total State Population (Female)"> Total State Population
+          (Female): 3%</label></div>
+      <div class="option"><label><input type="checkbox" value="Total Birth Rate"> Total Birth Rate: 1%</label></div>
+      <div class="option"><label><input type="checkbox" value="Total Death Rate"> Total Death Rate: 1%</label></div>
+
+      <!-- Repeat the above structure for each option -->
+    </div>
+
+    <button id="submitBtn" onclick="submitForm()">Submit</button>
+  </form>
+  <span id='elId' userName="{{State}}"></span>
+
+  <script>
+
+    async function submitForm() {
+      const selectedItems = Array.from(document.querySelectorAll('.options-container input:checked'))
+        .map(checkbox => checkbox.value);
+
+      console.log('Selected Items:', selectedItems);
+
+      try {
+        const csrftoken = document.querySelector('[name=csrfmiddlewaretoken]').value;
+
+        const url = '/home';  // Replace with your Django URL
+
+        const response = await fetch(url, {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            'X-CSRFToken': csrftoken,
+          },
+          body: JSON.stringify({ selectedItems: selectedItems }),
+        });
+
+        if (!response.ok) {
+          throw new Error('Network response was not ok');
+        }
+
+        const data = await response.json();
+        console.log('Response from Django:', data);
+        // Handle the response as needed
+      } catch (error) {
+        console.error('Error:', error);
+      }
+    }
+  </script>
+
+
+  <h1 style="margin-bottom: 40px;margin-top: 10;"> Result Of Top 10 States </h1>
+  <div id="funnel-chart" style="height: 700px; width: 100%;"></div>
+
+  <script>
+
+
+    var data = [{
+      type: 'funnel',
+      y:['New Hampshire', 'Idaho', 'New Mexico', 'Massachusetts', 'Wisconsin', 'South Carolina', 'Oregon', 'Arizona', 'Mississippi', 'Delaware', 'North Carolina'],
+      x:[1.468256736654717, 1.4677523244067503, 1.425643525080605, 1.3852402524966645, 1.3808178804611995, 1.3797991564378693, 1.357360172360831, 1.3546964985944414, 1.348088574390546, 1.3395818498692893],
+      textinfo: "value+percent initial",
+      text:['New Hampshire', 'Idaho', 'New Mexico', 'Massachusetts', 'Wisconsin', 'South Carolina', 'Oregon', 'Arizona', 'Mississippi', 'Delaware', 'North Carolina'],
+      textfont: {
+        family: 'Arial, sans-serif',
+        size: 14,
+        color: 'white',
+      },
+    }];
+
+    // Layout configuration
+    var layout = {
+      title: 'MACHINE LEARNING FACTORS AND THE WEIGHTED AVERAGES',
+      funnelmode: "stack",
+      margin: { l: 250 },
+    };
+
+    // Create the funnel chart
+    Plotly.newPlot('funnel-chart', data, layout);
+  </script>
+  <br>
+  <br>
+
+  <h1 style="margin-bottom: 40px;margin-top: 10;"> 18 Factor Metric Selection </h1>
+
+  <canvas id="radialChart" width="400" height="400" style="margin-bottom: 40px;margin-top: 10;"></canvas>
+
+  <script>
+    // Sample data
+    var data = [1.468256736654717, 1.4677523244067503, 1.425643525080605, 1.3852402524966645, 1.3808178804611995, 1.3797991564378693, 1.357360172360831, 1.3546964985944414, 1.348088574390546, 1.3395818498692893];
+
+    // Get the canvas element
+    var ctx = document.getElementById('radialChart').getContext('2d');
+
+    // Configure the chart
+    var myChart = new Chart(ctx, {
+      type: 'radar',
+      data: {
+        labels: ['New Hampshire', 'Idaho', 'New Mexico', 'Massachusetts', 'Wisconsin', 'South Carolina', 'Oregon', 'Arizona', 'Mississippi', 'Delaware', 'North Carolina'],
+        datasets: [{
+          data: data,
+          backgroundColor: 'rgba(75, 192, 192, 0.2)',
+          borderColor: 'rgba(75, 192, 192, 1)',
+          borderWidth: 4,
+        }],
+      },
+      options: {
+        scales: {
+
+        }
+      },
+    });
+  </script>
+
+
+
+  <div id="textSummary">
+    <h2>Select 3 states To show The Comparisan</h2>
+    <form method="post" action="/send_email_with_pdf" enctype="multipart/form-data">
+      {% csrf_token %}
+
+      <br><br>
+
+      <div class="form-group">
+        <label style="color: #ffffff; font-size: larger; font-weight: bold;" for="targetLanguageSelect">Target
+          Select State No 1:</label>
+        <select id="targetLanguageSelect" name="targetLanguageSelect" required>
+          <option value="Tennessee">Tennessee</option>
+          <option value="Texas">Texas</option>
+          <option value="Utah">Utah</option>
+          <option value="Vermont">Vermont</option>
+          <option value="Virginia">Virginia</option>
+          <option value="Washington">Washington</option>
+          <option value="West Virginia">West Virginia</option>
+          <option value="Wisconsin">Wisconsin</option>
+          <option value="Wyoming">Wyoming</option>
+          <!-- Add more language options -->
+        </select>
+      </div>
+      <div class="form-group">
+        <label style="color: #ffffff; font-size: larger; font-weight: bold;" for="targetLanguageSelect1">Target
+          Select State No 2:</label>
+        <select id="targetLanguageSelect1" name="targetLanguageSelect1" required>
+          <option value="Massachusetts">Massachusetts</option>
+          <option value="Michigan">Michigan</option>
+          <option value="Minnesota">Minnesota</option>
+          <option value="Mississippi">Mississippi</option>
+          <option value="Missouri">Missouri</option>
+          <option value="Montana">Montana</option>
+          <option value="Nebraska">Nebraska</option>
+          <option value="Nevada">Nevada</option>
+          <option value="New Hampshire">New Hampshire</option>
+          <option value="New Jersey">New Jersey</option>
+          <option value="New Mexico">New Mexico</option>
+          <option value="New York">New York</option>
+          <option value="North Carolina">North Carolina</option>
+          <option value="North Dakota">North Dakota</option>
+          <option value="Ohio">Ohio</option>
+          <option value="Oklahoma">Oklahoma</option>
+          <option value="Oregon">Oregon</option>
+          <option value="Pennsylvania">Pennsylvania</option>
+          <option value="Rhode Island">Rhode Island</option>
+          <option value="South Carolina">South Carolina</option>
+          <option value="South Dakota">South Dakota</option>
+          <!-- Add more language options -->
+        </select>
+      </div>
+      <div class="form-group">
+        <label style="color: #ffffff; font-size: larger; font-weight: bold;" for="targetLanguageSelect2">Target
+          Select State No 3:</label>
+        <select id="targetLanguageSelect2" name="targetLanguageSelect2" required>
+          <option value="Alabama">Alabama</option>
+          <option value="Alaska">Alaska</option>
+          <option value="Arizona">Arizona</option>
+          <option value="Arkansas">Arkansas</option>
+          <option value="California">California</option>
+          <option value="Colorado">Colorado</option>
+          <option value="Connecticut">Connecticut</option>
+          <option value="Delaware">Delaware</option>
+          <option value="District of Columbia">District of Columbia</option>
+          <option value="Florida">Florida</option>
+          <option value="Georgia">Georgia</option>
+          <option value="Hawaii">Hawaii</option>
+          <option value="Idaho">Idaho</option>
+          <option value="Illinois">Illinois</option>
+          <option value="Indiana">Indiana</option>
+          <option value="Iowa">Iowa</option>
+          <option value="Kansas">Kansas</option>
+          <option value="Kentucky">Kentucky</option>
+          <option value="Louisiana">Louisiana</option>
+          <option value="Maine">Maine</option>
+          <option value="Maryland">Maryland</option>
+          <!-- Add more language options -->
+        </select>
+      </div>
+
+
+
+      <br><br>
+
+      <button style=" 
+      background-color: #04AA6D; /* Green */
+     border: none;
+     color: white;
+     padding: 15px 32px;
+     text-align: center;
+     text-decoration: none;
+     display: inline-block;
+     font-size: 16px;
+     margin: 4px 2px;
+     margin-left: 100;
+     cursor: pointer;"
+     type="submit">Comparison</button>
+
+
+
+
+    </form>
+    <canvas id="areaChart" style="width:100%;max-width:600px; margin-top: 10px; margin-left:300px;"></canvas>
+
+    <script>
+      // Sample data for the area chart
+      var data = {
+        labels: ['Alabama', 'Massachusetts', 'Tennessee'],
+        datasets: [{
+          label: 'Example Area Chart',
+          data: [0.10, 0.15, 0.7],
+          backgroundColor: 'rgba(75, 192, 192, 0.2)',
+          borderColor: 'rgba(75, 192, 192, 1)',
+          borderWidth: 2,
+          fill: true  // This property makes it an area chart
+        }]
+      };
+
+      // Configuration options
+      var options = {
+        scales: {
+          x: {
+            type: 'category',
+            labels:['Alabama', 'Massachusetts', 'Tennessee'],
+          },
+          y: {
+            beginAtZero: true
+          }
+        }
+      };
+
+      // Get the canvas element
+      var ctx = document.getElementById('areaChart').getContext('2d');
+
+      // Create the area chart
+      var myAreaChart = new Chart(ctx, {
+        type: 'line',  // Use 'line' type for area chart
+        data: data,
+        options: options
+      });
+    </script>
+    <br>
+    <br>
+    <button style=" 
+     background-color: #04AA6D; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    margin-left: 100;
+    cursor: pointer;" onclick="convertHTMLtoPDF()">Save Results</button>
+     <script>
+      function convertHTMLtoPDF() {
+          const pdf = new jspdf.jsPDF();
+
+          const element = document.body;
+
+          // Set the scrollY option to capture the entire page content
+          html2canvas(element, { scrollY: -window.scrollY }).then((canvas) => {
+              const imageData = canvas.toDataURL('image/png');
+
+              pdf.addImage(imageData, 'PNG', 0, 0, pdf.internal.pageSize.width, pdf.internal.pageSize.height);
+
+              // Trigger the download
+              pdf.save('downloaded-pdf.pdf');
+          });
+      }
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+
+  {% endblock body %}
