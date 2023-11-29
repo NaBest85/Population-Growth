@@ -22,10 +22,13 @@ Objective: The direct objective of this project is to deliver insights into the 
 
 ## Questions We Would Like to Answer:
 
-Question 1
-Question 2
-Question 3
-Etc.
+Question 1: How  were the variables and data sets selected for the machine learning models and Tableeau used to forecast population growth and economic impacts? Essentionally, how is the numeric change in a state's GDP, population, salary, housing costs, unemployment rate, new small businesses and other factors calculated?
+
+Question 2: What insights can be obtained from analyzing the correlation matrix chart and the two linear regression charts in order to understand the relationship between total population and growth, birth/death rates and eeconomic factors in different states?
+
+Question 3: Can someone explain the methodology used to rank the Best States 2024 based on forecasted population growth and economic indicators?
+
+Question 4: What is the distribution of household income across different income brackets? What percentage of households have a total income below $10,000 and above $200,000?
 
 #### Locations of Project Deliverables:
 
