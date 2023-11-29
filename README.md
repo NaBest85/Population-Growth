@@ -41,7 +41,7 @@ Our machine learning interface is hosted on Python Anywhere, and the model can b
 
 ###### Technologies & Tools Used:
 
-![TOOLS EMPLOYED FOR DATA ANALYSIS-2](https://github.com/NaBest85/Population-Growth/assets/135518113/2b47cdc7-b425-48dc-ac94-d6c042cf42f2)
+![TOOLS EMPLOYED FOR DATA ANALYSIS](https://github.com/NaBest85/Population-Growth/assets/135518113/5c6126e4-c1bf-4d97-b164-f2e3a55acfe0)
 
 ###### Data Exploration Phase:
 
