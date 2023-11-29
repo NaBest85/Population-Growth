@@ -37,7 +37,7 @@ Question 4: What is the distribution of household income across different income
 #### Presentation:
 Our presentation is hosted on Google Slides, and can be found [here](https://tinyurl.com/Group4FinalProjectSlides).
 
-Our machine learning interface is hosted on Python Anywhere, and the model can be found [here]([add link](http://rahiembrooks.pythonanywhere.com)).
+Our machine learning interface is hosted on Python Anywhere, and the model can be found [here](http://rahiembrooks.pythonanywhere.com)).
 
 ###### Technologies & Tools Used:
 
