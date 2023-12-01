@@ -37,7 +37,7 @@ Question 4: What is the distribution of household income across different income
 #### Presentation:
 Our presentation is hosted on Google Slides, and can be found [here](https://tinyurl.com/Group4FinalProjectSlides).
 
-Our machine learning interface is hosted on Python Anywhere, and the model can be found [here](http://rahiembrooks.pythonanywhere.com)).
+Our machine learning interface is hosted on Python Anywhere, and the model can be found [here](http://rahiembrooks.pythonanywhere.com).
 
 ###### Technologies & Tools Used:
 
@@ -49,17 +49,13 @@ Our machine learning interface is hosted on Python Anywhere, and the model can b
 
 
 ###### Data Analysis Phase:
-Detailed descriptions of our data analysis can be found in our [presentation](add link).
+Detailed descriptions of our data analysis can be found in our [presentation](https://docs.google.com/presentation/d/12vH61_6ZNXq3ZBAwq311brAK14peyUG4rkLQNc5FjgM/edit#slide=id.g1f87997393_0_1369).
 
 Here is a chart the shows x, y, z.
 
 <img width="574" alt="SCIKIT_LEARN POPULATION CHANGE LINEAR REGRESSION" src="https://github.com/NaBest85/Population-Growth/assets/135518113/f1407c38-ce92-4831-a54b-aa8c6d784130">
 
-- Fact 1
-
-- Fact 2
-
-- Fact 3
+- SUMMARY
 
 ###### Data Sources:
 
