@@ -35,7 +35,7 @@ Question 4: What is the distribution of household income across different income
 ![Objectives](https://github.com/NaBest85/Population-Growth/assets/135518113/e677a23b-2aa1-4396-8226-b0890041cf62)
 
 #### Presentation:
-Our presentation is hosted on Google Slides, and can be found [here](https://tinyurl.com/Group4FinalProjectSlides).
+Our presentation is hosted on Google Slides, and can be found [here](https://docs.google.com/presentation/d/e/2PACX-1vQUnxHTNXRGel638romLxZZx8syTqLE9BSV0MyXXXReIcBTcswT9ux-yQugeViF5FIvhif2OMjBK2VV/pub?start=false&loop=true&delayms=10000).
 
 Our machine learning interface is hosted on Python Anywhere, and the model can be found [here](http://rahiembrooks.pythonanywhere.com).
 
@@ -49,7 +49,7 @@ Our machine learning interface is hosted on Python Anywhere, and the model can b
 
 
 ###### Data Analysis Phase:
-Detailed descriptions of our data analysis can be found in our [presentation](https://docs.google.com/presentation/d/12vH61_6ZNXq3ZBAwq311brAK14peyUG4rkLQNc5FjgM/edit#slide=id.g1f87997393_0_1369).
+Detailed descriptions of our data analysis can be found in our [presentation](https://docs.google.com/presentation/d/e/2PACX-1vQUnxHTNXRGel638romLxZZx8syTqLE9BSV0MyXXXReIcBTcswT9ux-yQugeViF5FIvhif2OMjBK2VV/pub?start=false&loop=true&delayms=10000).
 
 Here is a chart the shows x, y, z.
 
