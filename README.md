@@ -100,16 +100,6 @@ This model is over 3x more accurate than the other random forest models attempte
 This includes the Gradient BoostingRegressor which is built to optimize validation error, while also stopping training trees before overfitting occurs. 
 
 
-
-#### Dashboard:
-
-We used *Tableau* to create and host our dashboard.
-- The dashboard for the Popultion Vs Income Heat Maps can be found here: (https://public.tableau.com/app/profile/nicholas.best8688/viz/Population-Income_17012671879200/2020?publish=yes)
-- The dashboard for the Birth and Death chart can be found here: https://public.tableau.com/app/profile/ross.branch/viz/BirthsandDeathsTotals/Story1,  
-- The dashboard for Population Change can be found here: https://public.tableau.com/app/profile/ross.branch/viz/EstimatedPopulationTotals/Story1- The dashboard for the HouseHole Income can be found here: https://public.tableau.com/app/profile/nicholas.best8688/viz/HouseHoldIncome_17011334138390/Households10kandunder?publish=yes.
-
-Png of Dashboard
-
 #### Analysis Results:
 
 
