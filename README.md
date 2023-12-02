@@ -159,7 +159,11 @@ Finally, the intercept value of 0.451994486667233 represents the baseline rankin
 
 These insights help understand the factors influencing the rankings and their relative importance. States with strong job markets, lower costs of living, and significant industry growth tend to have higher rankings.
 
-###### Machine Learning Approach for State Ranking and Comparison Based on User-Selected Factors
+#### Machine Learning Approach for State Ranking and Comparison Based on User-Selected Factors
+
+
+#### Interact with the interface [here](http://rahiembrooks.pythonanywhere.com).
+
 
 #### Abstract:
 This study presents a machine learning-based approach to rank and compare states based on user-selected factors. Three years of data (2020-2022) from all 50 states were compiled, normalized, and weighted values were assigned to 18 factors. A user interface was developed, enabling users to select factors of importance by checking corresponding boxes about their desired living and working conditions. Upon submission, the interface provides the top ten states based on the user's selection. Furthermore, users can download a CSV file that ranks all 50 states, providing valuable insights for relocation decisions. Additionally, the interface allows users to compare three states simultaneously.
@@ -177,10 +181,6 @@ To account for varying importance, weights were assigned to the 18 factors. Thes
 A user-friendly interface was developed, allowing users to select factors of personal relevance interactively. By checking the corresponding boxes, users can indicate the factors that matter most to them, aligning with their preferences and requirements.
 
 <img width="1440" alt="Screenshot 2023-12-01 at 11 29 30 PM" src="https://github.com/NaBest85/Population-Growth/assets/135518113/5c274c7d-8ad0-4cc2-9f6a-85fe96ab3ea7">
-
-
-#### Interact with the interface [here](http://rahiembrooks.pythonanywhere.com).
-
 
 #### State Ranking and Comparison:
 The interface uses machine learning strategies to generate a list of the top ten states based on the user's selected factors. This ranking provides users with a comprehensive understanding of states that align with their preferences, aiding decision-making.
