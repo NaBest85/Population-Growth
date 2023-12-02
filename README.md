@@ -123,7 +123,7 @@ The Linear Regression model significantly outperformed the closest model by 40 t
 
 The second closest model in terms of accuracy was the Random Forest Regression model. It displayed over 3 times higher accuracy compared to the other Random Forest models attempted. This includes the Gradient Boosting Regressor, which was designed to optimize validation error and prevent overfitting by stopping tree training at the right point.
 
-#### Analysis Results:
+###### Analysis Results:
 
 Based on our analysis of the data, we found the following insights:
 
@@ -151,7 +151,7 @@ Finally, the intercept value of 0.451994486667233 represents the baseline rankin
 
 These insights help understand the factors influencing the rankings and their relative importance. States with strong job markets, lower costs of living, and significant industry growth tend to have higher rankings.
 
-#### Recommendations for Future Analysis:
+###### Recommendations for Future Analysis:
 
 To enhance future analysis, consider the following recommendations:
 
@@ -159,7 +159,7 @@ To enhance future analysis, consider the following recommendations:
 2. Include interaction terms: Investigate potential interactions between the existing variables to capture complex relationships that may affect rankings.
 3. Expand dataset: Collect more comprehensive data encompassing a wider time period to obtain a more representative and robust analysis.
 
-#### Improvements We Would Have Made:
+###### Improvements We Would Have Made:
 
 Although our analysis yielded valuable insights, there are areas where improvements could be made:
 
