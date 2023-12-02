@@ -104,7 +104,9 @@ These one-to-one relationships guarantee the presence of a distinct record for e
 
 <img width="799" alt="MERGED CLEANED DATA" src="https://github.com/NaBest85/Population-Growth/assets/135518113/81cd680a-ea64-4f48-8e87-aab58304bda0">
 
-Explanation of Model Choice
+
+### Explanation of Model Choice
+
 
 <img width="483" alt="LINEAR REGRESSION MODEL" src="https://github.com/NaBest85/Population-Growth/assets/135518113/a8eff9d2-8e28-4561-931a-416a62d4f629">
 
