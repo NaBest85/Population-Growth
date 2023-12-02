@@ -155,9 +155,9 @@ These insights help understand the factors influencing the rankings and their re
 
 To enhance future analysis, consider the following recommendations:
 
-1. Explore additional variables: Incorporate more factors that might influence state rankings, such as education quality, healthcare access, or crime rates.
+1. Explore additional variables: Incorporate more factors that might influence state rankings, such as education quality, healthcare access, infrastructure and fiscal stability.
 2. Include interaction terms: Investigate potential interactions between the existing variables to capture complex relationships that may affect rankings.
-3. Expand dataset: Collect more comprehensive data encompassing a wider range of states and time periods to obtain a more representative and robust analysis.
+3. Expand dataset: Collect more comprehensive data encompassing a wider time period to obtain a more representative and robust analysis.
 
 #### Improvements We Would Have Made:
 
