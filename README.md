@@ -76,9 +76,7 @@ By comparing the predicted values with the true values, we can evaluate the accu
 
 [Pandas](https://pandas.pydata.org/docs/reference/api/pandas.pivot_table.html)
 
-[Machine Learner](https://machinelearningmastery.com/how-to-prepare-categorical-data-for-deep-learning-in-python/)
-
-[Scikit-Learn](https://machinelearningmastery.com/how-to-prepare-categorical-data-for-deep-learning-in-python/)
+[Machine Learner](https://machinelearningmastery.com/how-to-prepare-categorical-data-for-deep-learning-in-python/)  &  [Scikit-Learn](https://machinelearningmastery.com/how-to-prepare-categorical-data-for-deep-learning-in-python/)
 
 [Root Mean Square](https://statisticsbyjim.com/regression/root-mean-square-error-rmse/#:~:text=By%20considering%20the%20scale%20of,error%20rate%20of%20only%204%25.)
 
