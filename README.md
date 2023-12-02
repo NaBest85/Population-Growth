@@ -72,6 +72,14 @@ On the other hand, the true values represent the actual population change observ
 
 By comparing the predicted values with the true values, we can evaluate the accuracy of the predictions. This analysis helps in understanding the performance of the machine learning model and its ability to forecast population changes.
 
+2020 Population/Birth Rate Tableau [Dashboard](https://public.tableau.com/app/profile/ross.branch/viz/BirthsandDeathsTotals/Story1).
+
+![Story 1](https://github.com/NaBest85/Population-Growth/assets/135518113/17723184-1c53-41a4-b942-bd1663aa861f)
+
+2020 Population-to-Income to Tableau [Dashboard](https://public.tableau.com/app/profile/nicholas.best8688/viz/Population-Income_17012671879200/2020?publish=yes).
+
+![2020](https://github.com/NaBest85/Population-Growth/assets/135518113/d05d4474-5286-4f81-8100-877c4d5abd41)
+
 ###### Data Sources:
 
 [Pandas](https://pandas.pydata.org/docs/reference/api/pandas.pivot_table.html)
@@ -123,14 +131,6 @@ The Linear Regression model significantly outperformed the closest model by 40 t
 
 The second closest model in terms of accuracy was the Random Forest Regression model. It displayed over 3 times higher accuracy compared to the other Random Forest models attempted. This includes the Gradient Boosting Regressor, which was designed to optimize validation error and prevent overfitting by stopping tree training at the right point.
 
-2020 Population/Birth Rate Tableau [Dashboard](https://public.tableau.com/app/profile/ross.branch/viz/BirthsandDeathsTotals/Story1).
-
-![Story 1](https://github.com/NaBest85/Population-Growth/assets/135518113/17723184-1c53-41a4-b942-bd1663aa861f)
-
-2020 Population-to-Income to Tableau [Dashboard](https://public.tableau.com/app/profile/nicholas.best8688/viz/Population-Income_17012671879200/2020?publish=yes).
-
-![2020](https://github.com/NaBest85/Population-Growth/assets/135518113/d05d4474-5286-4f81-8100-877c4d5abd41)
-
 ###### Analysis Results:
 
 Based on our analysis of the data, we found the following insights:
@@ -158,6 +158,41 @@ Moving on to the coefficients:
 Finally, the intercept value of 0.451994486667233 represents the baseline ranking value when all factors are zero. It indicates the starting point for the ranking model.
 
 These insights help understand the factors influencing the rankings and their relative importance. States with strong job markets, lower costs of living, and significant industry growth tend to have higher rankings.
+
+###### Machine Learning Approach for State Ranking and Comparison Based on User-Selected Factors
+
+#### Abstract:
+This study presents a machine learning-based approach to rank and compare states based on user-selected factors. Three years of data (2020-2022) from all 50 states were compiled, normalized, and weighted values were assigned to 18 factors. A user interface was developed, enabling users to select factors of importance by checking corresponding boxes about their desired living and working conditions. Upon submission, the interface provides the top ten states based on the user's selection. Furthermore, users can download a CSV file that ranks all 50 states, providing valuable insights for relocation decisions. Additionally, the interface allows users to compare three states simultaneously.
+
+#### Introduction:
+Relocating to a new state involves various considerations, such as job opportunities, cost of living, and quality of life. This study aims to assist individuals in making informed decisions by utilizing a machine learning approach.
+
+ #### Data Collection and Normalization:
+Data spanning three years (2020-2022) from all 50 states was collected and processed. To ensure a fair comparison, the collected data was normalized using appropriate techniques to eliminate potential bias.
+
+#### Weighted Factor Assignment:
+To account for varying importance, weights were assigned to the 18 factors. These factors encompassed job market demand, cost of living index, and industry growth. The weights were determined through meticulous analysis, considering the significance of each factor in state rankings.
+
+#### User Interface Development:
+A user-friendly interface was developed, allowing users to select factors of personal relevance interactively. By checking the corresponding boxes, users can indicate the factors that matter most to them, aligning with their preferences and requirements.
+
+<img width="1440" alt="Screenshot 2023-12-01 at 11 29 30 PM" src="https://github.com/NaBest85/Population-Growth/assets/135518113/5c274c7d-8ad0-4cc2-9f6a-85fe96ab3ea7">
+
+#### State Ranking and Comparison:
+The interface uses machine learning strategies to generate a list of the top ten states based on the user's selected factors. This ranking provides users with a comprehensive understanding of states that align with their preferences, aiding decision-making.
+
+<img width="1265" alt="Screenshot 2023-12-01 at 11 32 14 PM" src="https://github.com/NaBest85/Population-Growth/assets/135518113/ad242f83-7bcd-4aaf-874b-dfb5ec800b79">
+
+#### CSV Download and Comprehensive Ranking:
+In addition to the top ten state results, users can download a CSV file containing a complete ranking of all 50 states. This comprehensive ranking is a valuable resource, offering a detailed overview of state suitability for relocation.
+
+#### State Comparison Functionality:
+The interface incorporates a state comparison feature to enable users to make more informed decisions. Users can select and compare up to three states simultaneously, allowing for a thorough analysis of factors influencing their relocation choices.
+
+<img width="807" alt="Screenshot 2023-12-01 at 11 31 45 PM" src="https://github.com/NaBest85/Population-Growth/assets/135518113/072d2844-f3fc-4ff9-b604-82fb67c3bc62">
+
+#### Conclusion:
+This study presents a machine learning-driven approach to state ranking and comparison based on user-selected factors. The developed user interface empowers users to make well-informed decisions by providing top-state recommendations and facilitating state-to-state comparisons. The downloadable CSV file enhances the interface's usability, offering a comprehensive ranking of all 50 states.
 
 ###### Recommendations for Future Analysis:
 
