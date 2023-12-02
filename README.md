@@ -123,6 +123,14 @@ The Linear Regression model significantly outperformed the closest model by 40 t
 
 The second closest model in terms of accuracy was the Random Forest Regression model. It displayed over 3 times higher accuracy compared to the other Random Forest models attempted. This includes the Gradient Boosting Regressor, which was designed to optimize validation error and prevent overfitting by stopping tree training at the right point.
 
+2020 Population/Birth Rate Tableau [Dashboard](https://public.tableau.com/app/profile/ross.branch/viz/BirthsandDeathsTotals/Story1).
+
+![Story 1](https://github.com/NaBest85/Population-Growth/assets/135518113/17723184-1c53-41a4-b942-bd1663aa861f)
+
+2020 Population-to-Income to Tableau [Dashboard](https://public.tableau.com/app/profile/nicholas.best8688/viz/Population-Income_17012671879200/2020?publish=yes).
+
+![2020](https://github.com/NaBest85/Population-Growth/assets/135518113/d05d4474-5286-4f81-8100-877c4d5abd41)
+
 ###### Analysis Results:
 
 Based on our analysis of the data, we found the following insights:
