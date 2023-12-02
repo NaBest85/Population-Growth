@@ -159,10 +159,10 @@ Finally, the intercept value of 0.451994486667233 represents the baseline rankin
 
 These insights help understand the factors influencing the rankings and their relative importance. States with strong job markets, lower costs of living, and significant industry growth tend to have higher rankings.
 
-#### Machine Learning Approach for State Ranking and Comparison Based on User-Selected Factors
+### Machine Learning Approach for State Ranking and Comparison Based on User-Selected Factors
 
 
-# - Interact with the interface [here](http://rahiembrooks.pythonanywhere.com).
+#### - Interact with the interface [here](http://rahiembrooks.pythonanywhere.com).
 
 
 #### Abstract:
