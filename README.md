@@ -51,11 +51,26 @@ Our machine learning interface is hosted on Python Anywhere, and the model can b
 ###### Data Analysis Phase:
 Detailed descriptions of our data analysis can be found in our [presentation](https://docs.google.com/presentation/d/e/2PACX-1vQUnxHTNXRGel638romLxZZx8syTqLE9BSV0MyXXXReIcBTcswT9ux-yQugeViF5FIvhif2OMjBK2VV/pub?start=false&loop=true&delayms=10000).
 
-Here is a chart the shows x, y, z.
+The line chart demonstrates the predicted population change for the years 2020-2022 across all 50 states, Washington, DC, and Puerto Rico. The x-axis represents the time period, ranging from 0 to 10, indicating the progression of time. The y-axis represents the magnitude of the population change, ranging from -1.0 to 1.5.
 
 <img width="574" alt="SCIKIT_LEARN POPULATION CHANGE LINEAR REGRESSION" src="https://github.com/NaBest85/Population-Growth/assets/135518113/f1407c38-ce92-4831-a54b-aa8c6d784130">
 
 - SUMMARY
+The predicted values in the chart indicate the projected population change for each year. These values are generated using a machine learning model, specifically from the scikit-learn library in Python. The predicted values for each year are as follows:
+
+- For the year 2020, the predicted population change is 0.3789.
+- For the year 2021, the predicted population change is 0.4299.
+- For the year 2022, the predicted population change is 0.0658.
+- And so on...
+
+On the other hand, the true values represent the actual population change observed during the same time period. These values are the ground truth against which the predictions are compared. The true values for each year are as follows:
+
+- For the year 2020, the actual population change is 0.5603.
+- For the year 2021, the actual population change is 0.8643.
+- For the year 2022, the actual population change is 0.3473.
+- And so on...
+
+By comparing the predicted values with the true values, we can evaluate the accuracy of the predictions. This analysis helps in understanding the performance of the machine learning model and its ability to forecast population changes.
 
 ###### Data Sources:
 
