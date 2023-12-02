@@ -96,48 +96,73 @@ These one-to-one relationships guarantee the presence of a distinct record for e
 #### Machine Learning:
 
 ###### Preliminary Data Processing:
-- The first steps were to check the kind of data types were inside of the CSV file housing our data for each state. We found that our dataset had city name, state, county and other variables, leaving the ranges from 2020-2022. 
+-This dataset is a combination of multiple datasets that have been cleaned and merged for analysis. The cleaning process involved removing duplicates, handling missing values, and standardizing the column names. To eliminate duplicate entries, we used a unique identifier column. For handling missing values, appropriate methods such as imputation with median, mean, or forward-fill were applied. Column names were standardized to ensure consistency across the datasets.
 
-- The next was to check for duplicates and null values in the dataframe we created. We chose to keep the first of each of the duplicates and drop all rows that did not have data reflecting US states or our time frame of focus.
+-The merging process involved combining relevant columns from different datasets and different years, ranging from 2020 to 2022. Common identifiers were used to merge the datasets, ensuring accurate and meaningful combinations. By merging the datasets, we aim to gain a broader view of the data and facilitate comprehensive analysis.
 
-In the first week, we were able to complete the initial unsupervised clustering. We attained the following 3D Pricincipal Cluster Analysis Plot from this data.
+-This cleaned and merged dataset will be utilized for various analysis tasks, including but not limited to feature engineering, model training, and evaluation. It provides a consolidated and reliable source of data for conducting in-depth analysis and generating valuable insights.
 
-Photo of testing model
+<img width="799" alt="MERGED CLEANED DATA" src="https://github.com/NaBest85/Population-Growth/assets/135518113/81cd680a-ea64-4f48-8e87-aab58304bda0">
 
-###### Preliminary Feature Engineering, Feature Selection, & Decision-making Process:
+Explanation of Model Choice
 
+<img width="483" alt="LINEAR REGRESSION MODEL" src="https://github.com/NaBest85/Population-Growth/assets/135518113/a8eff9d2-8e28-4561-931a-416a62d4f629">
+
+Here are the linear regression results of our machine learning model:
 
 ###### Splitting Data Into Testing & Training sets:
-For our final linear regression model, we used an 80/20 testing/training split to achieve our results. The testing/training splits we tried in other methods are shown in the table below.
-
+For our final linear regression model, we used an 80/20 testing/training split. This means that 80% of the data was used for training the model, while the remaining 20% was used for testing and evaluating its performance.
 
 ###### Explanation of Model Choice (Including Limitations & Benefits):
 
-Here are the models we tried, along with results we got:
+We experimented with several models and obtained the following results:
 
+The Linear Regression model significantly outperformed the closest model by 40 times in terms of RMSE (Root Mean Squared Error). Due to its simplicity, we also explored other models to assess if any could surpass its performance.
 
-The Linear Regression model outperformed the closest model by 40x RMSE. Since it was the most simple solution, we tried a few other models as well to see if we could outperform it.
-
-
-The second closest was random forest regression 
-
-This model is over 3x more accurate than the other random forest models attempted 
-
-This includes the Gradient BoostingRegressor which is built to optimize validation error, while also stopping training trees before overfitting occurs. 
-
+The second closest model in terms of accuracy was the Random Forest Regression model. It displayed over 3 times higher accuracy compared to the other Random Forest models attempted. This includes the Gradient Boosting Regressor, which was designed to optimize validation error and prevent overfitting by stopping tree training at the right point.
 
 #### Analysis Results:
 
+Based on our analysis of the data, we found the following insights:
 
+1. Mean Absolute Error (MAE):
+   - The MAE value of 0.04841392466037104 indicates that, on average, the predicted rankings of the Best US States deviate by approximately 0.0484 from the actual rankings. A lower MAE suggests a better fit of the model's predictions to the actual data.
 
+2. Mean Squared Error (MSE):
+   - The MSE value of 0.003399581613349438 represents the average squared difference between the predicted and actual rankings. It provides a measure of the overall model's accuracy. The lower the MSE, the better the model's predictions align with the actual rankings.
+
+3. Root Mean Squared Error (RMSE):
+   - The RMSE value of 0.05830593120214648 is the square root of the MSE. It measures the average magnitude of the prediction errors. Like MAE and MSE, a lower RMSE indicates a better fit of the model.
+
+Moving on to the coefficients:
+
+1. Job Market Demand:
+   - The coefficient of 0.060648 suggests that a higher job market demand positively affects the state's ranking. This means that states with stronger job markets tend to have higher rankings.
+
+2. Cost of Living Index:
+   - The coefficient of -0.069957 indicates that a higher cost of living index has a negative impact on the state's ranking. States with lower costs of living tend to rank higher.
+
+3. Industry Growth:
+   - The coefficient of 0.497142 suggests that higher industry growth positively influences the state's ranking. States with thriving industries are more likely to have higher rankings.
+
+Finally, the intercept value of 0.451994486667233 represents the baseline ranking value when all factors are zero. It indicates the starting point for the ranking model.
+
+These insights help understand the factors influencing the rankings and their relative importance. States with strong job markets, lower costs of living, and significant industry growth tend to have higher rankings.
 
 #### Recommendations for Future Analysis:
 
+To enhance future analysis, consider the following recommendations:
 
+1. Explore additional variables: Incorporate more factors that might influence state rankings, such as education quality, healthcare access, or crime rates.
+2. Include interaction terms: Investigate potential interactions between the existing variables to capture complex relationships that may affect rankings.
+3. Expand dataset: Collect more comprehensive data encompassing a wider range of states and time periods to obtain a more representative and robust analysis.
 
 #### Improvements We Would Have Made:
 
+Although our analysis yielded valuable insights, there are areas where improvements could be made:
 
+1. Data quality: Ensure the accuracy and completeness of the data used for analysis, as any gaps or errors could impact the reliability of the results.
+2. Model evaluation: Perform a thorough evaluation of various models to identify the most suitable approach, considering different algorithms and techniques beyond the ones explored in this analysis.
+3. Feature engineering: Explore additional feature engineering techniques, such as scaling, transforming, or combining variables to enhance the predictive power of the model.
 
-
-
+By addressing these aspects, future analyses can yield even more accurate and informative results.
