@@ -81,9 +81,17 @@ By comparing the predicted values with the true values, we can evaluate the accu
 [Root Mean Square](https://statisticsbyjim.com/regression/root-mean-square-error-rmse/#:~:text=By%20considering%20the%20scale%20of,error%20rate%20of%20only%204%25.)
 
 #### Database:
-- For our database, we will be using PostgreSQL by use of pgAdmin. The image below represents the tables of data that are uploaded onto the database in Postgres. 
+The ERD diagram illustrates the interrelationships among state population, employment rate, and unemployment rate. The State entity serves as the primary key across all three tables, facilitating seamless integration between them.
 
-- The most common and obvious connect between all of our datasets is… (Make an observation)
+The one-to-one relationships can be succinctly summarized as follows:
+  - Each state is uniquely represented by a record in the 'Total State Population' table, and vice versa.
+  - Likewise, each state is associated with a single record in the 'State Employment Rate' table, and vice versa.
+  - Similarly, each state is linked to a solitary record in the 'Employment Average Salary' table, and vice versa.
+  - Additionally, each state has a connected record in the 'Small Business' table, and vice versa.
+
+These one-to-one relationships guarantee the presence of a distinct record for each state in every relevant table. By leveraging the primary key of the 'State' entity, these connections are established and upheld, ensuring a cohesive and comprehensive representation of the data.
+
+![ERD Diagram](https://github.com/NaBest85/Population-Growth/assets/135518113/af32a919-50ab-4d3d-94c4-f2d808e59dc3)
 
 #### Machine Learning:
 
