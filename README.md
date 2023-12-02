@@ -55,7 +55,7 @@ The line chart demonstrates the predicted population change for the years 2020-2
 
 <img width="574" alt="SCIKIT_LEARN POPULATION CHANGE LINEAR REGRESSION" src="https://github.com/NaBest85/Population-Growth/assets/135518113/f1407c38-ce92-4831-a54b-aa8c6d784130">
 
-## SUMMARY
+## Summary
 The predicted values in the chart indicate the projected population change for each year. These values are generated using a machine learning model, specifically from the scikit-learn library in Python. The predicted values for each year are as follows:
 
 - For the year 2020, the predicted population change is 0.3789.
